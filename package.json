@@ -1,0 +1,13 @@
+{
+  "name": "uc-riesgo",
+  "version": "0.1.0",
+  "description": "Motor y sección de riesgo para el Backoffice de Urban Capital (política v0.1, borrador)",
+  "type": "module",
+  "private": true,
+  "main": "src/risk-engine.js",
+  "scripts": {
+    "test": "node --test",
+    "dev": "npx --yes http-server . -p 8080 -c-1"
+  },
+  "engines": { "node": ">=18" }
+}

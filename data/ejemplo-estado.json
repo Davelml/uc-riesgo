@@ -1,0 +1,29 @@
+{
+  "_nota": "Datos de ejemplo de la política v0.1 (equipo en +50). No son cuentas reales.",
+  "periodo": "2026-10",
+  "actualizado": "2026-10-26T12:00:00-03:00",
+  "datos_edad_seg": 5,
+  "parametros": {
+    "B": 10,
+    "p": 0.70,
+    "lambda": 0.50,
+    "alpha": 0.30,
+    "beta": 0.15,
+    "grupo": 0.40,
+    "departamento": 0.60,
+    "max_op_pct": 0.01,
+    "min_op_pct": 0.005
+  },
+  "pnl": { "realizado": 50, "no_realizado": 0, "h_previo": 50 },
+  "traders": [
+    { "id": "T1", "nombre": "Trader 1", "departamento": "Commodities", "capital": 350 },
+    { "id": "T2", "nombre": "Trader 2", "departamento": "Commodities", "capital": 350 },
+    { "id": "T3", "nombre": "Trader 3", "departamento": "Cripto", "capital": 350 },
+    { "id": "T4", "nombre": "Trader 4", "departamento": "Cripto", "capital": 350 }
+  ],
+  "posiciones": [
+    { "id": "P1", "trader_id": "T1", "instrumento": "XAUUSD", "direccion": "Largo", "perdida_hasta_stop": 3.0 },
+    { "id": "P2", "trader_id": "T2", "instrumento": "XAGUSD", "direccion": "Largo", "perdida_hasta_stop": 2.0 },
+    { "id": "P3", "trader_id": "T3", "instrumento": "BTCUSDT", "direccion": "Largo", "perdida_hasta_stop": 3.5 }
+  ]
+}

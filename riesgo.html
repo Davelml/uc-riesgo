@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riesgo · Urban Capital Backoffice</title>
+  <link rel="stylesheet" href="./src/riesgo.css">
+  <style>
+    /* Solo para la demo: imita el contenedor del Backoffice. En producción se usa el layout existente. */
+    body { margin: 0; background: #0a1020; }
+    main { max-width: 1400px; margin: 0 auto; padding: 32px 24px 48px; }
+    .demo-head p { margin: 0; color: #22c38e; font: 700 11px/1 system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+    .demo-head h1 { margin: 8px 0 4px; color: #e6ecf5; font: 800 26px/1.2 system-ui, sans-serif; }
+    .demo-head span { color: #8a97ad; font: 13px system-ui, sans-serif; }
+    .demo-head { margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="demo-head">
+      <p>● Mercado conectado</p>
+      <h1>Riesgo</h1>
+      <span>Presupuesto de pérdida del equipo, piso protegido y límites por trader.</span>
+    </header>
+    <div id="uc-riesgo"></div>
+  </main>
+  <script type="module">
+    import { montarRiesgo } from "./src/riesgo-ui.js";
+    // Demo: lee los datos de ejemplo. En el Backoffice: endpoint "/api/riesgo/estado" y puedeEditar según el rol.
+    montarRiesgo(document.getElementById("uc-riesgo"), {
+      endpoint: "./data/ejemplo-estado.json",
+      puedeEditar: true,
+      refrescoSeg: 0,
+    });
+  </script>
+</body>
+</html>
